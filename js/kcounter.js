@@ -17,7 +17,9 @@
 			settings = $.extend({
 				height: 50,
 				width: 50,
-				initial: false
+				initial: false,
+				easing: 'swing',
+				duration: 'fast'
 			}, options);
 			
 			return this.each(function(){									  				
@@ -117,9 +119,9 @@
 							}				   
 							$('ul:nth-child('+(index+1)+') li', $this).html(html) ;
 						}
-						$('ul:nth-child('+(index+1)+') li', $this).animate({ top: -value * settings.height }) ;	
+						$('ul:nth-child('+(index+1)+') li', $this).animate({ top: -value * settings.height }, settings.duration, settings.easing ) ;	
 					} else {
-						$('ul:nth-child('+(index+1)+') li', $this).html("<span>"+value+"</span>").animate({top: 0}) ;
+						$('ul:nth-child('+(index+1)+') li', $this).html("<span>"+value+"</span>").animate({top: 0}, settings.duration, settings.easing) ;
 					}
 				});
 				
