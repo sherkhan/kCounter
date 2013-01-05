@@ -10,7 +10,7 @@
  */
 (function($){	  
 		  
-	var settings, methods = {
+	var methods = {
 		init : function( options ){ 
 		
 			// defaults
@@ -21,6 +21,8 @@
 				easing: 'swing',
 				duration: 'fast'
 			}, options);
+			
+			$(this).data('settings',settings) ;
 			
 			return this.each(function(){									  				
 									  
@@ -85,6 +87,7 @@
 				
 				var chars = content.toString().split("") ;				
 				var numberCounters = $('ul', $this).length ;
+				var settings = $(this).data('settings');
 				
 				if(numberCounters!==chars.length){
 					var diff = chars.length-numberCounters ;
