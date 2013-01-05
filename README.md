@@ -22,5 +22,7 @@ A simple animated counter, accepts numbers or strings
 <pre>
 'height'         : 50, // The default height of an individual counter
 'width'          : 50, // The default width of an individual counter
-'initial'        : false // Override the element content if desired
+'initial'        : false // Override the element content if desired,
+'easing'		 : 'swing' // [swing,linear] unless using easing plugin (Jquery UI)
+'duration'       : 'fast' // [slow,fast,integer value]
 </pre>
