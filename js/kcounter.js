@@ -14,13 +14,11 @@
 		init : function( options ){ 
 		
 			// defaults
-			var settings = $.extend({
+			settings = $.extend({
 				height: 50,
 				width: 50,
 				initial: false
 			}, options);
-			
-	  		$(this).data('settings',settings) ;
 			
 			return this.each(function(){									  				
 									  
@@ -83,9 +81,7 @@
 									  
 				var $this = $(this);
 				
-				var chars = content.toString().split("") ;
-				
-				var settings = $(this).data('settings');				
+				var chars = content.toString().split("") ;				
 				var numberCounters = $('ul', $this).length ;
 				
 				if(numberCounters!==chars.length){
