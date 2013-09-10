@@ -12,10 +12,10 @@ A simple animated counter, accepts numbers or strings
 # Usage & Examples
 
 ### initialise with options
-`$('#example').counter({ initial: 54321 }) ;`
+`$('#example').kCounter({ initial: 54321 }) ;`
     
 ### update the counter
-`$('#example').counter('update', 12345) ;`
+`$('#example').kCounter('update', 12345) ;`
 
 
 # Available options and defaults
