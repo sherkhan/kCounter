@@ -11,6 +11,12 @@ A simple animated counter, accepts numbers or strings
 
 # Usage & Examples
 
+### html
+`<div id="example">12345</div>`
+
+### initialise (uses element contents)
+`$('#example').kCounter() ;`
+
 ### initialise with options
 `$('#example').kCounter({ initial: 54321 }) ;`
     
