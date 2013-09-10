@@ -12,9 +12,9 @@ A simple animated counter, accepts numbers or strings
 # Usage & Examples
 
 ### inlcude jquery and kcounter (optionally jquery ui)
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
-<script src="/path/to/kcounter.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+    <script src="/path/to/kcounter.js"></script>
 
 ### html
 `<div id="example">12345</div>`
